@@ -120,3 +120,35 @@ hr{
 
 
 }
+
+
+/* Media queries */
+
+/*----------------
+Mobile Devise 
+------------------*/
+@media only screen and (max-width:688px) {
+    .conatiner{
+        width: 100%;
+    }
+    .players , .blogs, .main-course{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .single-players{
+        flex-direction: column;
+    }
+}
+
+/* Tablet devise */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .conatiner{
+        width: 100%;
+    }
+    .players, .main-course{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
